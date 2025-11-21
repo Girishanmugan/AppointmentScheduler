@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Enable CORS
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'https://appointment-scheduler-azure.vercel.app/login',
   credentials: true
 }));
 
@@ -76,3 +76,4 @@ process.on('uncaughtException', (err) => {
 });
 
 module.exports = app;
+
